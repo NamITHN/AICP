@@ -48,9 +48,16 @@ public class Status {
     }
 
     boolean isDie() {
-        return this.c > this.p;
+        if (this.c > this.p && this.p != 0){
+            return true;
+        }
+        else if((3 - this.c > 3 - this.p) && ((3 - this.p) != 0))
+        return true;
+        return false;
+
     }
-    boolean iss(Status temp){
+
+    boolean compare(Status temp) {
         return this.c == temp.getC() && this.p == temp.getP() && this.k == temp.getK();
     }
 }
