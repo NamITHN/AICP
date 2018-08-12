@@ -47,6 +47,7 @@ public class Status {
                 '}';
     }
 
+    //todo kiểm tra trạng thái
     boolean isDie() {
         if (this.c > this.p && this.p != 0){
             return true;
@@ -57,6 +58,7 @@ public class Status {
 
     }
 
+    //todo so sánh 2 đối tượng
     boolean compare(Status temp) {
         return this.c == temp.getC() && this.p == temp.getP() && this.k == temp.getK();
     }
